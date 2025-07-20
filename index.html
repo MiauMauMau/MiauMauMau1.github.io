@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SCARPA - Zapatería Ortopédica</title>
+  <link rel="stylesheet" href="css/inicio.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <!-- Loader -->
+  <div class="loader">
+    <div class="loader-content">
+      <i class="fas fa-shoe-prints"></i>
+      <p>Cargando...</p>
+    </div>
+  </div>
+
+  <header>
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <i class="fas fa-shoe-prints"></i>
+          <span>SCARPA </span>
+        </div>
+        <ul class="menu">
+          <li><a href="#inicio"><i class="fas fa-home"></i> Inicio</a></li>
+          <li><a href="#servicios"><i class="fas fa-tools"></i> Servicios</a></li>
+          <li><a href="#productos"><i class="fas fa-shopping-bag"></i> Productos</a></li>
+          <li><a href="#contacto"><i class="fas fa-envelope"></i> Contacto</a></li>
+        </ul>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <section id="inicio" class="seccion hero">
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1>Bienvenidos al Taller de Zapatería Ortopédica</h1>
+        <p>Especialistas en calzado ortopédico personalizado, brindando confort y salud para tus pies.</p>
+        <div class="hero-buttons">
+          <button class="btn-primary">Ver Productos</button>
+          <button class="btn-secondary">Contactanos</button>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="img/zapatos.jpg" alt="Zapatos Ortopédicos">
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <i class="fas fa-chevron-down"></i>
+    </div>
+  </section>
+
+ <section id="servicios" class="seccion servicios-section">
+  <div class="section-header">
+    <h2>Nuestros Servicios</h2>
+    <p>Ofrecemos soluciones especializadas para el cuidado de tus pies</p>
+  </div>
+  
+  <div class="servicios-container">
+    <div class="servicios-scroll">
+      <div class="servicio-card">
+        <div class="servicio-icon">
+          <i class="fas fa-shoe-prints"></i>
+        </div>
+        <img src="img/fzapato.jpg" alt="Zapato Ortopédico">
+        <div class="servicio-content">
+          <h3>Zapatos Ortopédicos</h3>
+          <button class="btn-service">Saber más</button>
+        </div>
+      </div>
+      
+      <div class="servicio-card">
+        <div class="servicio-icon">
+          <i class="fas fa-band-aid"></i>
+        </div>
+        <img src="img/fplantilla.jpg" alt="Plantillas">
+        <div class="servicio-content">
+          <h3>Plantillas Ortopédicas</h3>
+          <button class="btn-service">Saber más</button>
+        </div>
+      </div>
+      
+      <div class="servicio-card">
+        <div class="servicio-icon">
+          <i class="fas fa-wrench"></i>
+        </div>
+        <img src="img/fespolon.jpg" alt="Espolon">
+        <div class="servicio-content">
+          <h3>Taloneras Para Espolón</h3>
+          <button class="btn-service">Saber más</button>
+        </div>
+      </div>
+
+      <div class="servicio-card">
+        <div class="servicio-icon">
+          <i class="fas fa-band-aid"></i>
+        </div>
+        <img src="img/fcalce.jpg" alt="Calce">
+        <div class="servicio-content">
+          <h3>Taloneras de Calce</h3>
+          <button class="btn-service">Saber más</button>
+        </div>
+      </div>
+
+      <div class="servicio-card">
+        <div class="servicio-icon">
+          <i class="fas fa-band-aid"></i>
+        </div>
+        <img src="img/fdennisbrown.jpg" alt="Dennis Browne">
+        <div class="servicio-content">
+          <h3>Barras Dennis Browne</h3>
+          <button class="btn-service">Saber más</button>
+        </div>
+      </div>
+      
+      <div class="servicio-card">
+        <div class="servicio-icon">
+          <i class="fas fa-band-aid"></i>
+        </div>
+        <img src="img/ftwister.jpg" alt="Twister">
+        <div class="servicio-content">
+          <h3>Twister</h3>
+          <button class="btn-service">Saber más</button>
+        </div>
+      </div>
+    </div>
+    
+    <div class="servicio-detalle">
+      <div class="detalle-content">
+        <span class="cerrar-detalle">&times;</span>
+        <h3 id="detalle-titulo"></h3>
+        <img id="detalle-imagen" src="" alt="">
+        <p id="detalle-descripcion"></p>
+        <button class="btn-whatsapp">
+          <i class="fab fa-whatsapp"></i> Consultar por WhatsApp
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <section id="productos" class="seccion">
+    <div class="section-header">
+      <h2>Nuestros Productos</h2>
+      <p>Encuentra el calzado perfecto para tus necesidades</p>
+    </div>
+    
+    <div class="filtros-container">
+      <div class="filtros">
+        <div class="filtro-group">
+          <label for="categoria">Categoría</label>
+          <select id="categoria">
+            <option value="">Todas las categorías</option>
+            <option value="tenis">Tenis</option>
+            <option value="zapatillas">Zapatos</option>
+            <option value="botas">Botas</option>
+            <option value="botines">Botines</option>
+            <option value="plantillas">Plantillas</option>
+            <option value="taloneras">Taloneras para espolon</option>
+            <option value="barras">Barra de Browne</option>
+             <option value="twister">Ortencia Twister</option>
+          </select>
+        </div>
+        <div class="filtro-group">
+          <label for="precioMin">Precio mínimo</label>
+          <input type="number" id="precioMin" placeholder="$0" />
+        </div>
+        <div class="filtro-group">
+          <label for="precioMax">Precio máximo</label>
+          <input type="number" id="precioMax" placeholder="$5000" />
+        </div>
+      </div>
+    </div>
+    
+    <div id="lista-productos" class="productos-grid"></div>
+  </section>
+
+  <section id="contacto" class="seccion">
+    <div class="section-header">
+      <h2>Contáctanos</h2>
+      <p>Estamos aquí para ayudarte con tus necesidades ortopédicas</p>
+    </div>
+    
+    <div class="contacto-container">
+      <div class="contacto-info">
+        <div class="info-card">
+          <i class="fas fa-store"></i>
+          <h3>Nombre del Negocio</h3>
+          <p> SCARPA <br> Taller de Articulos Ortopedicos</p>
+        </div>
+        <div class="info-card">
+          <i class="fas fa-map-marker-alt"></i>
+          <h3>Dirección</h3>
+          <p>Séptima Calle Sur Ote. 22, barrio de, San Sebastián, 30029 Comitán de Domínguez, Chis.</p>
+        </div>
+        <div class="info-card">
+          <i class="fas fa-phone"></i>
+          <h3>Teléfono</h3>
+          <p>WhatsApp: +52 963 100 4207</p>
+        </div>
+        <div class="info-card">
+          <i class="fas fa-clock"></i>
+          <h3>Horarios</h3>
+          Lunes - Viernes: 8:00 AM - 6:00 PM<br>Sábado: 8:00 AM - 3:00 PM<br>Domingo: Cerrado</p>
+        </div>
+      </div>
+      
+      <div class="mapa">
+         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3830.4480262977695!2d-92.13269012509191!3d16.24879248445704!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x858d3905561a3ddb%3A0xaccd824cdb05109f!2sSCARPA!5e0!3m2!1ses!2smx!4v1749421511112!5m2!1ses!2smx" 
+         width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3><i class="fas fa-shoe-prints"></i> SCARPA</h3>
+        <p>Tu salud podal es nuestra prioridad. Especialistas en calzado ortopédico desde 2014.</p>
+        <div class="social-links">
+         
+        </div>
+      </div>
+      <div class="footer-section">
+        <h4>Enlaces Rápidos</h4>
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#productos">Productos</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Contacto</h4>
+        <p><i class="fas fa-phone"></i>+52 963 100 4207</p>
+        <p><i class="fas fa-envelope"></i> Scarpacommx@gmail.com</p>
+        <p><i class="fas fa-map-marker-alt"></i> Barrio San Sebastian, Comitan de Dominguez, Chiapas</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Taller Ortopédico SCARPA. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Modal mejorado -->
+  <div id="modal" class="modal">
+    <div class="modal-contenido">
+      <span class="cerrar">&times;</span>
+      <div class="modal-image-container">
+        <img id="modal-img" src="" alt="Producto" />
+        <div class="modal-controles">
+          <button id="prevBtn"><i class="fas fa-chevron-left"></i></button>
+          <button id="nextBtn"><i class="fas fa-chevron-right"></i></button>
+        </div>
+      </div>
+      <div id="modal-thumbnails" class="modal-thumbnails"></div>
+      <div class="modal-info">
+        <h3 id="modal-nombre"></h3>
+        <p id="modal-precio" class="precio"></p>
+        <p id="modal-talla" class="talla"></p>
+        <p id="modal-descripcion"></p>
+        <button class="btn-whatsapp">
+          <i class="fab fa-whatsapp"></i> Consultar por WhatsApp
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/inicio.js"></script>
+</body>
+</html>
